@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo -E docker run \
+docker run \
     -it --privileged --net=host --pid=host \
     -v /dev:/dev:ro \
     -v /lib/modules:/lib/modules:ro \
