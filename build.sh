@@ -95,6 +95,14 @@ manifests:
     platform:
       architecture: arm64
       os: linux  
+  - image: ${REGISTRY}:armv7hf-latest
+    platform:
+      architecture: arm
+      os: linux  
+  - image: ${REGISTRY}:amd64-latest
+    platform:
+      architecture: amd64
+      os: linux  
 EOL
 
     ${MANIFEST_TOOL} push from-spec ${MANIFEST_FILE}
